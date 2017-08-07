@@ -23,5 +23,10 @@ namespace JobTracker
 
             Application.Exit();
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
