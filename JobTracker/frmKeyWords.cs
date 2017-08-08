@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Collections;
 
 namespace JobTracker
 {
     public partial class frmKeyWords : Form
-    {
+    {   //-- CONSTANTS
+        const int ROLE = 0;
+        const int KW = 1;
+
         public frmKeyWords()
         {
             InitializeComponent();
@@ -41,6 +46,39 @@ namespace JobTracker
             txtKW8.Text = "";
             txtKW9.Text = "";
             txtKW10.Text = "";
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            //-- close the form
+            this.Close();
+        }
+
+        private void frmKeyWords_Load(object sender, EventArgs e)
+        {
+            int ndx = 0;
+            int pos = 0;
+            int ln = 0;
+
+            //==ArrayList KWArray = new ArrayList();
+            string[,] kwList = new string[200, 2];
+            string line;
+
+            System.IO.StreamReader file = new System.IO.StreamReader("C:\\Users\\sds admin\\Source\\Repos\\JobTracker\\JobTracker\\JobTracker\\KeyWords.txt");
+            while ((line = file.ReadLine()) != null & (ndx < 200))
+            {//-- loop till we get to the end of the file or 200 items
+                //-- pull the role, stuff into ndx, 0
+                pos = line.IndexOf(",");
+                kwList[ndx, ROLE] = line.Substring(0, pos);
+
+                //-- pull the keyword, stuff into ndx, 1
+                kwList[ndx, KW] = line.Substring(pos + 1);
+
+                //-- bump it
+                ndx++;
+            }
+            //-- done processing input - close the file
+            file.Close();
         }
     }
 }

@@ -53,6 +53,7 @@
             this.txtKW10 = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCommit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +70,7 @@
             // txtKW1
             // 
             this.txtKW1.Location = new System.Drawing.Point(321, 82);
-            this.txtKW1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKW1.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW1.Name = "txtKW1";
             this.txtKW1.Size = new System.Drawing.Size(205, 23);
             this.txtKW1.TabIndex = 1;
@@ -100,7 +101,7 @@
             "Server Admin",
             "Software Engineering"});
             this.lstRole1.Location = new System.Drawing.Point(65, 85);
-            this.lstRole1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstRole1.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole1.Name = "lstRole1";
             this.lstRole1.Size = new System.Drawing.Size(203, 20);
             this.lstRole1.TabIndex = 36;
@@ -370,9 +371,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(592, 82);
+            this.btnClear.Location = new System.Drawing.Point(592, 79);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(91, 38);
             this.btnClear.TabIndex = 58;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -382,16 +383,29 @@
             // 
             this.btnCommit.Location = new System.Drawing.Point(720, 79);
             this.btnCommit.Name = "btnCommit";
-            this.btnCommit.Size = new System.Drawing.Size(75, 23);
+            this.btnCommit.Size = new System.Drawing.Size(91, 38);
             this.btnCommit.TabIndex = 59;
             this.btnCommit.Text = "Commit";
             this.btnCommit.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Red;
+            this.btnClose.Location = new System.Drawing.Point(857, 79);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(91, 38);
+            this.btnClose.TabIndex = 60;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmKeyWords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 615);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnCommit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lstRole10);
@@ -418,9 +432,10 @@
             this.Controls.Add(this.txtKW1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmKeyWords";
             this.Text = "Key Words Form - Enter key words and match to their role.";
+            this.Load += new System.EventHandler(this.frmKeyWords_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,5 +468,6 @@
         private System.Windows.Forms.TextBox txtKW10;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnCommit;
+        private System.Windows.Forms.Button btnClose;
     }
 }
