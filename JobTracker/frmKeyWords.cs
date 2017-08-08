@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using System.IO;
 using System.Collections;
 
+
 namespace JobTracker
 {
     public partial class frmKeyWords : Form
     {   //-- CONSTANTS
         const int ROLE = 0;
         const int KW = 1;
+        //--public static string[,] kwList = new string[200, 2];
 
         public frmKeyWords()
         {
@@ -61,8 +63,6 @@ namespace JobTracker
             int ln = 0;
             string s1, s2, s3 = "";
 
-            //==ArrayList KWArray = new ArrayList();
-            string[,] kwList = new string[200, 2];
             string line;
 
             System.IO.StreamReader file = new System.IO.StreamReader("C:\\Users\\sds admin\\Source\\Repos\\JobTracker\\JobTracker\\JobTracker\\KeyWords.txt");
@@ -70,10 +70,10 @@ namespace JobTracker
             {//-- loop till we get to the end of the file or 200 items
                 //-- pull the role, stuff into ndx, 0
                 pos = line.IndexOf(",");
-                kwList[ndx, ROLE] = line.Substring(0, pos);
+                Variables.kwList[ndx, ROLE] = line.Substring(0, pos);
 
                 //-- pull the keyword, stuff into ndx, 1
-                kwList[ndx, KW] = line.Substring(pos + 1);
+                Variables.kwList[ndx, KW] = line.Substring(pos + 1);
 
                 //-- bump it
                 ndx++;
@@ -84,22 +84,22 @@ namespace JobTracker
             //-- bubble sort the list according to Roles
             for (int i = 0; i < ndx-1; i ++)
             {//-- outer loop
-                s1 = kwList[i, ROLE];
+                s1 = Variables.kwList[i, ROLE];
                 for (int j = i+1; j < ndx; j++)
                 {//-- inner loop
-                    s2 = kwList[j, ROLE];
+                    s2 = Variables.kwList[j, ROLE];
 
                     if (string.Compare(s1, s2) > 0)
                     {//-- list is out of order - SWAP roles
                         s3 = s1;
                         s1 = s2;
                         s2 = s3;
-                        kwList[i, ROLE] = s1;
-                        kwList[j, ROLE] = s2;
+                        Variables.kwList[i, ROLE] = s1;
+                        Variables.kwList[j, ROLE] = s2;
                         //-- SWAP key words
-                        s3 = kwList[i, KW];
-                        kwList[i, KW] = kwList[j, KW];
-                        kwList[j, KW] = s3;
+                        s3 = Variables.kwList[i, KW];
+                        Variables.kwList[i, KW] = Variables.kwList[j, KW];
+                        Variables.kwList[j, KW] = s3;
                     }
                 }
             }

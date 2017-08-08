@@ -12,6 +12,7 @@ namespace JobTracker
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -60,5 +61,10 @@ namespace JobTracker
             frmKeyWords frmkw = new frmKeyWords();
             frmkw.ShowDialog();
         }
+    }
+    class Variables
+    {
+        public static string[,] kwList = new string[200, 2];
+
     }
 }
