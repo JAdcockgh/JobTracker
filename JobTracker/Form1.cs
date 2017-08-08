@@ -28,5 +28,36 @@ namespace JobTracker
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //-- 
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            //-- CLEAR the fields
+            txtJD.Text = "";
+            txtCoNm.Text = "";
+            txtAddr.Text = "";
+            txtCity.Text = "";
+            lstST.Text = "WA";
+            txtZip.Text = "";
+            txtLink.Text = "";
+            txtCodetestDescr.Text="";
+            dtIV1.Text = "";
+            dtIV2.Text = "";
+            dtIV3.Text = "";
+            dtResult.Text = "";
+            rbCodeTestPF.Checked = false;
+            txtResult.Text = "";
+            txtYesNoDescr.Text = "";
+
+        }
+
+        private void keywordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
