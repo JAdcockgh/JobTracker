@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtKW1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lstRole = new System.Windows.Forms.ListBox();
+            this.lstRole1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.listBox7 = new System.Windows.Forms.ListBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.listBox8 = new System.Windows.Forms.ListBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.listBox9 = new System.Windows.Forms.ListBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.listBox10 = new System.Windows.Forms.ListBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.lstRole2 = new System.Windows.Forms.ListBox();
+            this.txtKW2 = new System.Windows.Forms.TextBox();
+            this.lstRole3 = new System.Windows.Forms.ListBox();
+            this.txtKW3 = new System.Windows.Forms.TextBox();
+            this.lstRole4 = new System.Windows.Forms.ListBox();
+            this.txtKW4 = new System.Windows.Forms.TextBox();
+            this.lstRole5 = new System.Windows.Forms.ListBox();
+            this.txtKW5 = new System.Windows.Forms.TextBox();
+            this.lstRole6 = new System.Windows.Forms.ListBox();
+            this.txtKW6 = new System.Windows.Forms.TextBox();
+            this.lstRole7 = new System.Windows.Forms.ListBox();
+            this.txtKW7 = new System.Windows.Forms.TextBox();
+            this.lstRole8 = new System.Windows.Forms.ListBox();
+            this.txtKW8 = new System.Windows.Forms.TextBox();
+            this.lstRole9 = new System.Windows.Forms.ListBox();
+            this.txtKW9 = new System.Windows.Forms.TextBox();
+            this.lstRole10 = new System.Windows.Forms.ListBox();
+            this.txtKW10 = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnCommit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,13 +66,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Key Word Pairs";
             // 
-            // textBox1
+            // txtKW1
             // 
-            this.textBox1.Location = new System.Drawing.Point(321, 82);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 23);
-            this.textBox1.TabIndex = 1;
+            this.txtKW1.Location = new System.Drawing.Point(321, 82);
+            this.txtKW1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKW1.Name = "txtKW1";
+            this.txtKW1.Size = new System.Drawing.Size(205, 23);
+            this.txtKW1.TabIndex = 1;
             // 
             // label2
             // 
@@ -85,11 +85,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Key Word Roles";
             // 
-            // lstRole
+            // lstRole1
             // 
-            this.lstRole.FormattingEnabled = true;
-            this.lstRole.ItemHeight = 16;
-            this.lstRole.Items.AddRange(new object[] {
+            this.lstRole1.FormattingEnabled = true;
+            this.lstRole1.ItemHeight = 16;
+            this.lstRole1.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -98,11 +99,11 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole.Location = new System.Drawing.Point(65, 85);
-            this.lstRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lstRole.Name = "lstRole";
-            this.lstRole.Size = new System.Drawing.Size(203, 20);
-            this.lstRole.TabIndex = 36;
+            this.lstRole1.Location = new System.Drawing.Point(65, 85);
+            this.lstRole1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstRole1.Name = "lstRole1";
+            this.lstRole1.Size = new System.Drawing.Size(203, 20);
+            this.lstRole1.TabIndex = 36;
             // 
             // label3
             // 
@@ -115,11 +116,12 @@
             this.label3.TabIndex = 37;
             this.label3.Text = "Key Word";
             // 
-            // listBox1
+            // lstRole2
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lstRole2.FormattingEnabled = true;
+            this.lstRole2.ItemHeight = 16;
+            this.lstRole2.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -128,25 +130,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox1.Location = new System.Drawing.Point(65, 125);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(203, 20);
-            this.listBox1.TabIndex = 39;
+            this.lstRole2.Location = new System.Drawing.Point(65, 125);
+            this.lstRole2.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole2.Name = "lstRole2";
+            this.lstRole2.Size = new System.Drawing.Size(203, 20);
+            this.lstRole2.TabIndex = 39;
             // 
-            // textBox2
+            // txtKW2
             // 
-            this.textBox2.Location = new System.Drawing.Point(321, 122);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 23);
-            this.textBox2.TabIndex = 38;
+            this.txtKW2.Location = new System.Drawing.Point(321, 122);
+            this.txtKW2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW2.Name = "txtKW2";
+            this.txtKW2.Size = new System.Drawing.Size(205, 23);
+            this.txtKW2.TabIndex = 38;
             // 
-            // listBox2
+            // lstRole3
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Items.AddRange(new object[] {
+            this.lstRole3.FormattingEnabled = true;
+            this.lstRole3.ItemHeight = 16;
+            this.lstRole3.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -155,25 +158,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox2.Location = new System.Drawing.Point(65, 165);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(203, 20);
-            this.listBox2.TabIndex = 41;
+            this.lstRole3.Location = new System.Drawing.Point(65, 165);
+            this.lstRole3.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole3.Name = "lstRole3";
+            this.lstRole3.Size = new System.Drawing.Size(203, 20);
+            this.lstRole3.TabIndex = 41;
             // 
-            // textBox3
+            // txtKW3
             // 
-            this.textBox3.Location = new System.Drawing.Point(321, 162);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 23);
-            this.textBox3.TabIndex = 40;
+            this.txtKW3.Location = new System.Drawing.Point(321, 162);
+            this.txtKW3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW3.Name = "txtKW3";
+            this.txtKW3.Size = new System.Drawing.Size(205, 23);
+            this.txtKW3.TabIndex = 40;
             // 
-            // listBox3
+            // lstRole4
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Items.AddRange(new object[] {
+            this.lstRole4.FormattingEnabled = true;
+            this.lstRole4.ItemHeight = 16;
+            this.lstRole4.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -182,25 +186,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox3.Location = new System.Drawing.Point(65, 205);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(203, 20);
-            this.listBox3.TabIndex = 43;
+            this.lstRole4.Location = new System.Drawing.Point(65, 205);
+            this.lstRole4.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole4.Name = "lstRole4";
+            this.lstRole4.Size = new System.Drawing.Size(203, 20);
+            this.lstRole4.TabIndex = 43;
             // 
-            // textBox4
+            // txtKW4
             // 
-            this.textBox4.Location = new System.Drawing.Point(321, 202);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(205, 23);
-            this.textBox4.TabIndex = 42;
+            this.txtKW4.Location = new System.Drawing.Point(321, 202);
+            this.txtKW4.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW4.Name = "txtKW4";
+            this.txtKW4.Size = new System.Drawing.Size(205, 23);
+            this.txtKW4.TabIndex = 42;
             // 
-            // listBox4
+            // lstRole5
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Items.AddRange(new object[] {
+            this.lstRole5.FormattingEnabled = true;
+            this.lstRole5.ItemHeight = 16;
+            this.lstRole5.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -209,25 +214,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox4.Location = new System.Drawing.Point(65, 250);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(203, 20);
-            this.listBox4.TabIndex = 45;
+            this.lstRole5.Location = new System.Drawing.Point(65, 250);
+            this.lstRole5.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole5.Name = "lstRole5";
+            this.lstRole5.Size = new System.Drawing.Size(203, 20);
+            this.lstRole5.TabIndex = 45;
             // 
-            // textBox5
+            // txtKW5
             // 
-            this.textBox5.Location = new System.Drawing.Point(321, 247);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(205, 23);
-            this.textBox5.TabIndex = 44;
+            this.txtKW5.Location = new System.Drawing.Point(321, 247);
+            this.txtKW5.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW5.Name = "txtKW5";
+            this.txtKW5.Size = new System.Drawing.Size(205, 23);
+            this.txtKW5.TabIndex = 44;
             // 
-            // listBox5
+            // lstRole6
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 16;
-            this.listBox5.Items.AddRange(new object[] {
+            this.lstRole6.FormattingEnabled = true;
+            this.lstRole6.ItemHeight = 16;
+            this.lstRole6.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -236,25 +242,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox5.Location = new System.Drawing.Point(65, 295);
-            this.listBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(203, 20);
-            this.listBox5.TabIndex = 47;
+            this.lstRole6.Location = new System.Drawing.Point(65, 295);
+            this.lstRole6.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole6.Name = "lstRole6";
+            this.lstRole6.Size = new System.Drawing.Size(203, 20);
+            this.lstRole6.TabIndex = 47;
             // 
-            // textBox6
+            // txtKW6
             // 
-            this.textBox6.Location = new System.Drawing.Point(321, 292);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(205, 23);
-            this.textBox6.TabIndex = 46;
+            this.txtKW6.Location = new System.Drawing.Point(321, 292);
+            this.txtKW6.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW6.Name = "txtKW6";
+            this.txtKW6.Size = new System.Drawing.Size(205, 23);
+            this.txtKW6.TabIndex = 46;
             // 
-            // listBox6
+            // lstRole7
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 16;
-            this.listBox6.Items.AddRange(new object[] {
+            this.lstRole7.FormattingEnabled = true;
+            this.lstRole7.ItemHeight = 16;
+            this.lstRole7.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -263,25 +270,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox6.Location = new System.Drawing.Point(65, 340);
-            this.listBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(203, 20);
-            this.listBox6.TabIndex = 49;
+            this.lstRole7.Location = new System.Drawing.Point(65, 340);
+            this.lstRole7.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole7.Name = "lstRole7";
+            this.lstRole7.Size = new System.Drawing.Size(203, 20);
+            this.lstRole7.TabIndex = 49;
             // 
-            // textBox7
+            // txtKW7
             // 
-            this.textBox7.Location = new System.Drawing.Point(321, 337);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(205, 23);
-            this.textBox7.TabIndex = 48;
+            this.txtKW7.Location = new System.Drawing.Point(321, 337);
+            this.txtKW7.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW7.Name = "txtKW7";
+            this.txtKW7.Size = new System.Drawing.Size(205, 23);
+            this.txtKW7.TabIndex = 48;
             // 
-            // listBox7
+            // lstRole8
             // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.ItemHeight = 16;
-            this.listBox7.Items.AddRange(new object[] {
+            this.lstRole8.FormattingEnabled = true;
+            this.lstRole8.ItemHeight = 16;
+            this.lstRole8.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -290,25 +298,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox7.Location = new System.Drawing.Point(65, 385);
-            this.listBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(203, 20);
-            this.listBox7.TabIndex = 51;
+            this.lstRole8.Location = new System.Drawing.Point(65, 385);
+            this.lstRole8.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole8.Name = "lstRole8";
+            this.lstRole8.Size = new System.Drawing.Size(203, 20);
+            this.lstRole8.TabIndex = 51;
             // 
-            // textBox8
+            // txtKW8
             // 
-            this.textBox8.Location = new System.Drawing.Point(321, 382);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(205, 23);
-            this.textBox8.TabIndex = 50;
+            this.txtKW8.Location = new System.Drawing.Point(321, 382);
+            this.txtKW8.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW8.Name = "txtKW8";
+            this.txtKW8.Size = new System.Drawing.Size(205, 23);
+            this.txtKW8.TabIndex = 50;
             // 
-            // listBox8
+            // lstRole9
             // 
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.ItemHeight = 16;
-            this.listBox8.Items.AddRange(new object[] {
+            this.lstRole9.FormattingEnabled = true;
+            this.lstRole9.ItemHeight = 16;
+            this.lstRole9.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -317,25 +326,26 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox8.Location = new System.Drawing.Point(65, 430);
-            this.listBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(203, 20);
-            this.listBox8.TabIndex = 53;
+            this.lstRole9.Location = new System.Drawing.Point(65, 430);
+            this.lstRole9.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole9.Name = "lstRole9";
+            this.lstRole9.Size = new System.Drawing.Size(203, 20);
+            this.lstRole9.TabIndex = 53;
             // 
-            // textBox9
+            // txtKW9
             // 
-            this.textBox9.Location = new System.Drawing.Point(321, 427);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(205, 23);
-            this.textBox9.TabIndex = 52;
+            this.txtKW9.Location = new System.Drawing.Point(321, 427);
+            this.txtKW9.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW9.Name = "txtKW9";
+            this.txtKW9.Size = new System.Drawing.Size(205, 23);
+            this.txtKW9.TabIndex = 52;
             // 
-            // listBox9
+            // lstRole10
             // 
-            this.listBox9.FormattingEnabled = true;
-            this.listBox9.ItemHeight = 16;
-            this.listBox9.Items.AddRange(new object[] {
+            this.lstRole10.FormattingEnabled = true;
+            this.lstRole10.ItemHeight = 16;
+            this.lstRole10.Items.AddRange(new object[] {
+            "none",
             "Application Support",
             "Firmware Engienering",
             "Help Desk",
@@ -344,81 +354,73 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.listBox9.Location = new System.Drawing.Point(65, 475);
-            this.listBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox9.Name = "listBox9";
-            this.listBox9.Size = new System.Drawing.Size(203, 20);
-            this.listBox9.TabIndex = 55;
+            this.lstRole10.Location = new System.Drawing.Point(65, 475);
+            this.lstRole10.Margin = new System.Windows.Forms.Padding(4);
+            this.lstRole10.Name = "lstRole10";
+            this.lstRole10.Size = new System.Drawing.Size(203, 20);
+            this.lstRole10.TabIndex = 55;
             // 
-            // textBox10
+            // txtKW10
             // 
-            this.textBox10.Location = new System.Drawing.Point(321, 472);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(205, 23);
-            this.textBox10.TabIndex = 54;
+            this.txtKW10.Location = new System.Drawing.Point(321, 472);
+            this.txtKW10.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKW10.Name = "txtKW10";
+            this.txtKW10.Size = new System.Drawing.Size(205, 23);
+            this.txtKW10.TabIndex = 54;
             // 
-            // listBox10
+            // btnClear
             // 
-            this.listBox10.FormattingEnabled = true;
-            this.listBox10.ItemHeight = 16;
-            this.listBox10.Items.AddRange(new object[] {
-            "Application Support",
-            "Firmware Engienering",
-            "Help Desk",
-            "IT Manager",
-            "Manager",
-            "Network Admin",
-            "Server Admin",
-            "Software Engineering"});
-            this.listBox10.Location = new System.Drawing.Point(65, 520);
-            this.listBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox10.Name = "listBox10";
-            this.listBox10.Size = new System.Drawing.Size(203, 20);
-            this.listBox10.TabIndex = 57;
+            this.btnClear.Location = new System.Drawing.Point(592, 82);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 58;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // textBox11
+            // btnCommit
             // 
-            this.textBox11.Location = new System.Drawing.Point(321, 517);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(205, 23);
-            this.textBox11.TabIndex = 56;
+            this.btnCommit.Location = new System.Drawing.Point(720, 79);
+            this.btnCommit.Name = "btnCommit";
+            this.btnCommit.Size = new System.Drawing.Size(75, 23);
+            this.btnCommit.TabIndex = 59;
+            this.btnCommit.Text = "Commit";
+            this.btnCommit.UseVisualStyleBackColor = true;
             // 
             // frmKeyWords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 585);
-            this.Controls.Add(this.listBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.listBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.listBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.listBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.listBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(1149, 615);
+            this.Controls.Add(this.btnCommit);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.lstRole10);
+            this.Controls.Add(this.txtKW10);
+            this.Controls.Add(this.lstRole9);
+            this.Controls.Add(this.txtKW9);
+            this.Controls.Add(this.lstRole8);
+            this.Controls.Add(this.txtKW8);
+            this.Controls.Add(this.lstRole7);
+            this.Controls.Add(this.txtKW7);
+            this.Controls.Add(this.lstRole6);
+            this.Controls.Add(this.txtKW6);
+            this.Controls.Add(this.lstRole5);
+            this.Controls.Add(this.txtKW5);
+            this.Controls.Add(this.lstRole4);
+            this.Controls.Add(this.txtKW4);
+            this.Controls.Add(this.lstRole3);
+            this.Controls.Add(this.txtKW3);
+            this.Controls.Add(this.lstRole2);
+            this.Controls.Add(this.txtKW2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lstRole);
+            this.Controls.Add(this.lstRole1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtKW1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmKeyWords";
-            this.Text = "frmKeyWords";
+            this.Text = "Key Words Form - Enter key words and match to their role.";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,29 +429,29 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtKW1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lstRole;
+        private System.Windows.Forms.ListBox lstRole1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ListBox listBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ListBox listBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ListBox listBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ListBox listBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.ListBox lstRole2;
+        private System.Windows.Forms.TextBox txtKW2;
+        private System.Windows.Forms.ListBox lstRole3;
+        private System.Windows.Forms.TextBox txtKW3;
+        private System.Windows.Forms.ListBox lstRole4;
+        private System.Windows.Forms.TextBox txtKW4;
+        private System.Windows.Forms.ListBox lstRole5;
+        private System.Windows.Forms.TextBox txtKW5;
+        private System.Windows.Forms.ListBox lstRole6;
+        private System.Windows.Forms.TextBox txtKW6;
+        private System.Windows.Forms.ListBox lstRole7;
+        private System.Windows.Forms.TextBox txtKW7;
+        private System.Windows.Forms.ListBox lstRole8;
+        private System.Windows.Forms.TextBox txtKW8;
+        private System.Windows.Forms.ListBox lstRole9;
+        private System.Windows.Forms.TextBox txtKW9;
+        private System.Windows.Forms.ListBox lstRole10;
+        private System.Windows.Forms.TextBox txtKW10;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnCommit;
     }
 }

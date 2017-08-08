@@ -57,7 +57,8 @@ namespace JobTracker
 
         private void keywordsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmKeyWords frmkw = new frmKeyWords();
+            frmkw.ShowDialog();
         }
     }
 }
