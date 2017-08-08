@@ -59,6 +59,7 @@ namespace JobTracker
             int ndx = 0;
             int pos = 0;
             int ln = 0;
+            string s1, s2, s3 = "";
 
             //==ArrayList KWArray = new ArrayList();
             string[,] kwList = new string[200, 2];
@@ -79,6 +80,29 @@ namespace JobTracker
             }
             //-- done processing input - close the file
             file.Close();
+            
+            //-- bubble sort the list according to Roles
+            for (int i = 0; i < ndx-1; i ++)
+            {//-- outer loop
+                s1 = kwList[i, ROLE];
+                for (int j = i+1; j < ndx; j++)
+                {//-- inner loop
+                    s2 = kwList[j, ROLE];
+
+                    if (string.Compare(s1, s2) > 0)
+                    {//-- list is out of order - SWAP roles
+                        s3 = s1;
+                        s1 = s2;
+                        s2 = s3;
+                        kwList[i, ROLE] = s1;
+                        kwList[j, ROLE] = s2;
+                        //-- SWAP key words
+                        s3 = kwList[i, KW];
+                        kwList[i, KW] = kwList[j, KW];
+                        kwList[j, KW] = s3;
+                    }
+                }
+            }
         }
     }
 }

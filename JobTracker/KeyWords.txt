@@ -1,7 +1,9 @@
+Project Manager, Network
 Manager, personnel
 IT Manager, mentor
 Manager, mentor
 IT Manager, project management
+Helpdesk Manager,customer service
 IT Manager, documentation
 IT Manager, technical specifications
 IT Manager, vendors
