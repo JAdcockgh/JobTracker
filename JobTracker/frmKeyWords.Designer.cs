@@ -54,6 +54,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCommit = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lblempty = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +70,7 @@
             // 
             // txtKW1
             // 
-            this.txtKW1.Location = new System.Drawing.Point(321, 82);
+            this.txtKW1.Location = new System.Drawing.Point(321, 127);
             this.txtKW1.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW1.Name = "txtKW1";
             this.txtKW1.Size = new System.Drawing.Size(205, 23);
@@ -79,7 +80,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 47);
+            this.label2.Location = new System.Drawing.Point(65, 92);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 17);
@@ -100,7 +101,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole1.Location = new System.Drawing.Point(65, 85);
+            this.lstRole1.Location = new System.Drawing.Point(65, 130);
             this.lstRole1.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole1.Name = "lstRole1";
             this.lstRole1.Size = new System.Drawing.Size(203, 20);
@@ -110,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(321, 47);
+            this.label3.Location = new System.Drawing.Point(321, 92);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 17);
@@ -131,7 +132,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole2.Location = new System.Drawing.Point(65, 125);
+            this.lstRole2.Location = new System.Drawing.Point(65, 170);
             this.lstRole2.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole2.Name = "lstRole2";
             this.lstRole2.Size = new System.Drawing.Size(203, 20);
@@ -139,7 +140,7 @@
             // 
             // txtKW2
             // 
-            this.txtKW2.Location = new System.Drawing.Point(321, 122);
+            this.txtKW2.Location = new System.Drawing.Point(321, 167);
             this.txtKW2.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW2.Name = "txtKW2";
             this.txtKW2.Size = new System.Drawing.Size(205, 23);
@@ -159,7 +160,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole3.Location = new System.Drawing.Point(65, 165);
+            this.lstRole3.Location = new System.Drawing.Point(65, 210);
             this.lstRole3.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole3.Name = "lstRole3";
             this.lstRole3.Size = new System.Drawing.Size(203, 20);
@@ -167,7 +168,7 @@
             // 
             // txtKW3
             // 
-            this.txtKW3.Location = new System.Drawing.Point(321, 162);
+            this.txtKW3.Location = new System.Drawing.Point(321, 207);
             this.txtKW3.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW3.Name = "txtKW3";
             this.txtKW3.Size = new System.Drawing.Size(205, 23);
@@ -187,7 +188,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole4.Location = new System.Drawing.Point(65, 205);
+            this.lstRole4.Location = new System.Drawing.Point(65, 250);
             this.lstRole4.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole4.Name = "lstRole4";
             this.lstRole4.Size = new System.Drawing.Size(203, 20);
@@ -195,7 +196,7 @@
             // 
             // txtKW4
             // 
-            this.txtKW4.Location = new System.Drawing.Point(321, 202);
+            this.txtKW4.Location = new System.Drawing.Point(321, 247);
             this.txtKW4.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW4.Name = "txtKW4";
             this.txtKW4.Size = new System.Drawing.Size(205, 23);
@@ -215,7 +216,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole5.Location = new System.Drawing.Point(65, 250);
+            this.lstRole5.Location = new System.Drawing.Point(65, 295);
             this.lstRole5.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole5.Name = "lstRole5";
             this.lstRole5.Size = new System.Drawing.Size(203, 20);
@@ -223,7 +224,7 @@
             // 
             // txtKW5
             // 
-            this.txtKW5.Location = new System.Drawing.Point(321, 247);
+            this.txtKW5.Location = new System.Drawing.Point(321, 292);
             this.txtKW5.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW5.Name = "txtKW5";
             this.txtKW5.Size = new System.Drawing.Size(205, 23);
@@ -243,7 +244,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole6.Location = new System.Drawing.Point(65, 295);
+            this.lstRole6.Location = new System.Drawing.Point(65, 340);
             this.lstRole6.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole6.Name = "lstRole6";
             this.lstRole6.Size = new System.Drawing.Size(203, 20);
@@ -251,7 +252,7 @@
             // 
             // txtKW6
             // 
-            this.txtKW6.Location = new System.Drawing.Point(321, 292);
+            this.txtKW6.Location = new System.Drawing.Point(321, 337);
             this.txtKW6.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW6.Name = "txtKW6";
             this.txtKW6.Size = new System.Drawing.Size(205, 23);
@@ -271,7 +272,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole7.Location = new System.Drawing.Point(65, 340);
+            this.lstRole7.Location = new System.Drawing.Point(65, 385);
             this.lstRole7.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole7.Name = "lstRole7";
             this.lstRole7.Size = new System.Drawing.Size(203, 20);
@@ -279,7 +280,7 @@
             // 
             // txtKW7
             // 
-            this.txtKW7.Location = new System.Drawing.Point(321, 337);
+            this.txtKW7.Location = new System.Drawing.Point(321, 382);
             this.txtKW7.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW7.Name = "txtKW7";
             this.txtKW7.Size = new System.Drawing.Size(205, 23);
@@ -299,7 +300,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole8.Location = new System.Drawing.Point(65, 385);
+            this.lstRole8.Location = new System.Drawing.Point(65, 430);
             this.lstRole8.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole8.Name = "lstRole8";
             this.lstRole8.Size = new System.Drawing.Size(203, 20);
@@ -307,7 +308,7 @@
             // 
             // txtKW8
             // 
-            this.txtKW8.Location = new System.Drawing.Point(321, 382);
+            this.txtKW8.Location = new System.Drawing.Point(321, 427);
             this.txtKW8.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW8.Name = "txtKW8";
             this.txtKW8.Size = new System.Drawing.Size(205, 23);
@@ -327,7 +328,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole9.Location = new System.Drawing.Point(65, 430);
+            this.lstRole9.Location = new System.Drawing.Point(65, 475);
             this.lstRole9.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole9.Name = "lstRole9";
             this.lstRole9.Size = new System.Drawing.Size(203, 20);
@@ -335,7 +336,7 @@
             // 
             // txtKW9
             // 
-            this.txtKW9.Location = new System.Drawing.Point(321, 427);
+            this.txtKW9.Location = new System.Drawing.Point(321, 472);
             this.txtKW9.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW9.Name = "txtKW9";
             this.txtKW9.Size = new System.Drawing.Size(205, 23);
@@ -355,7 +356,7 @@
             "Network Admin",
             "Server Admin",
             "Software Engineering"});
-            this.lstRole10.Location = new System.Drawing.Point(65, 475);
+            this.lstRole10.Location = new System.Drawing.Point(65, 520);
             this.lstRole10.Margin = new System.Windows.Forms.Padding(4);
             this.lstRole10.Name = "lstRole10";
             this.lstRole10.Size = new System.Drawing.Size(203, 20);
@@ -363,7 +364,7 @@
             // 
             // txtKW10
             // 
-            this.txtKW10.Location = new System.Drawing.Point(321, 472);
+            this.txtKW10.Location = new System.Drawing.Point(321, 517);
             this.txtKW10.Margin = new System.Windows.Forms.Padding(4);
             this.txtKW10.Name = "txtKW10";
             this.txtKW10.Size = new System.Drawing.Size(205, 23);
@@ -371,7 +372,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(592, 79);
+            this.btnClear.Location = new System.Drawing.Point(592, 124);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(91, 38);
             this.btnClear.TabIndex = 58;
@@ -381,7 +382,7 @@
             // 
             // btnCommit
             // 
-            this.btnCommit.Location = new System.Drawing.Point(720, 79);
+            this.btnCommit.Location = new System.Drawing.Point(720, 124);
             this.btnCommit.Name = "btnCommit";
             this.btnCommit.Size = new System.Drawing.Size(91, 38);
             this.btnCommit.TabIndex = 59;
@@ -392,7 +393,7 @@
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Red;
-            this.btnClose.Location = new System.Drawing.Point(857, 79);
+            this.btnClose.Location = new System.Drawing.Point(857, 124);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(91, 38);
             this.btnClose.TabIndex = 60;
@@ -400,11 +401,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // lblempty
+            // 
+            this.lblempty.ForeColor = System.Drawing.Color.Red;
+            this.lblempty.Location = new System.Drawing.Point(114, 42);
+            this.lblempty.Name = "lblempty";
+            this.lblempty.Size = new System.Drawing.Size(294, 45);
+            this.lblempty.TabIndex = 61;
+            this.lblempty.Text = "Key Word File is empty - You will have to use the form to add Key Words to the fi" +
+    "le.";
+            // 
             // frmKeyWords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 615);
+            this.Controls.Add(this.lblempty);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnCommit);
             this.Controls.Add(this.btnClear);
@@ -469,5 +481,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnCommit;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblempty;
     }
 }

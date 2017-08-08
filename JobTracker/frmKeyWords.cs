@@ -52,6 +52,19 @@ namespace JobTracker
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            string line = "";
+            int ndx = 0;
+
+            //-- write the array back to the file
+            System.IO.StreamWriter  file = new System.IO.StreamWriter("C:\\Users\\sds admin\\Source\\Repos\\JobTracker\\JobTracker\\JobTracker\\KeyWords.txt");
+            while ((Variables.kwList[ndx, 0] != null) & (ndx < 200))
+                {
+                file.WriteLine(Variables.kwList[ndx,ROLE]+"," + Variables.kwList[ndx,KW]);
+                ndx++;
+            }
+            //-- close the file
+            file.Close();
+
             //-- close the form
             this.Close();
         }
@@ -60,7 +73,6 @@ namespace JobTracker
         {
             int ndx = 0;
             int pos = 0;
-            int ln = 0;
             string s1, s2, s3 = "";
 
             string line;
@@ -80,26 +92,33 @@ namespace JobTracker
             }
             //-- done processing input - close the file
             file.Close();
-            
-            //-- bubble sort the list according to Roles
-            for (int i = 0; i < ndx-1; i ++)
-            {//-- outer loop
-                s1 = Variables.kwList[i, ROLE];
-                for (int j = i+1; j < ndx; j++)
-                {//-- inner loop
-                    s2 = Variables.kwList[j, ROLE];
+            if (ndx == 0)
+                //-- key word file is empty
+                lblempty.Visible = true;
+            else
+            {
+                lblempty.Visible = false;
 
-                    if (string.Compare(s1, s2) > 0)
-                    {//-- list is out of order - SWAP roles
-                        s3 = s1;
-                        s1 = s2;
-                        s2 = s3;
-                        Variables.kwList[i, ROLE] = s1;
-                        Variables.kwList[j, ROLE] = s2;
-                        //-- SWAP key words
-                        s3 = Variables.kwList[i, KW];
-                        Variables.kwList[i, KW] = Variables.kwList[j, KW];
-                        Variables.kwList[j, KW] = s3;
+                //-- bubble sort the list according to Roles
+                for (int i = 0; i < ndx - 1; i++)
+                {//-- outer loop
+                    s1 = Variables.kwList[i, ROLE];
+                    for (int j = i + 1; j < ndx; j++)
+                    {//-- inner loop
+                        s2 = Variables.kwList[j, ROLE];
+
+                        if (string.Compare(s1, s2) > 0)
+                        {//-- list is out of order - SWAP roles
+                            s3 = s1;
+                            s1 = s2;
+                            s2 = s3;
+                            Variables.kwList[i, ROLE] = s1;
+                            Variables.kwList[j, ROLE] = s2;
+                            //-- SWAP key words
+                            s3 = Variables.kwList[i, KW];
+                            Variables.kwList[i, KW] = Variables.kwList[j, KW];
+                            Variables.kwList[j, KW] = s3;
+                        }
                     }
                 }
             }

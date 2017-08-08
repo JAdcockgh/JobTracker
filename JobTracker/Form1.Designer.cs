@@ -259,7 +259,6 @@
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(387, 23);
             this.txtLink.TabIndex = 7;
-            this.txtLink.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // txtResult
             // 

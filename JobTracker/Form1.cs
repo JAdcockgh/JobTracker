@@ -25,11 +25,6 @@ namespace JobTracker
             Application.Exit();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //-- 
@@ -58,6 +53,7 @@ namespace JobTracker
 
         private void keywordsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //-- open the form to build keyword -> role relationships
             frmKeyWords frmkw = new frmKeyWords();
             frmkw.ShowDialog();
         }
